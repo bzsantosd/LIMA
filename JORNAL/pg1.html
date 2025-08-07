@@ -15,49 +15,46 @@
     <!-- Cabeçalho do Jornal -->
     <header class="bg-white shadow-md rounded-b-xl mx-auto p-4 md:p-6 mb-8 w-11/12 md:max-w-6xl">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-            <h1 class="text-4xl font-extrabold text-blue-700">Jornal da Bia</h1>
-            <p class="text-lg text-gray-600 mt-2 md:mt-0">Notícias das Últimas Horas</p>
+            <h1 class="text-4xl font-extrabold text-blue-700">Jornal da Beatriz</h1>
+            <p class="text-lg text-gray-600 mt-2 md:mt-0"> - Notícias das Últimas Horas - </p>
         </div>
     </header>
 
     <!-- Menu de Navegação -->
     <nav class="bg-blue-700 text-white shadow-lg rounded-xl mx-auto mb-8 w-11/12 md:max-w-6xl">
         <ul class="flex flex-wrap justify-center md:justify-start space-x-4 md:space-x-8 p-4 text-lg font-semibold">
-            <li><a href="#" class="hover:text-blue-200 transition-colors">Início</a></li>
-            <li><a href="#" class="hover:text-blue-200 transition-colors">Política</a></li>
-            <li><a href="#" class="hover:text-blue-200 transition-colors">Saúde</a></li>
-            <li><a href="#" class="hover:text-blue-200 transition-colors">Tecnologia</a></li>
-            <li><a href="#" class="hover:text-blue-200 transition-colors">Entetenimento</a></li>
+            <li><a href="#destaque" class="hover:text-blue-200 transition-colors">Notícia em Destaque</a></li>
+            <li><a href="#saude" class="hover:text-blue-200 transition-colors">Saúde</a></li>
+            <li><a href="#clima" class="hover:text-blue-200 transition-colors">Clima</a></li>
         </ul>
     </nav>
 
     <!-- Conteúdo Principal -->
     <main class="container mx-auto p-4 md:p-0 grid grid-cols-1 md:grid-cols-3 gap-8 w-11/12 md:max-w-6xl">
-
-        <!-- Notícia em Destaque (Coluna 1) -->
-        <div class="md:col-span-2 bg-white p-6 rounded-2xl shadow-xl border-t-4 border-blue-500">
-            <a href="noticia.html">
-                <img src="/JORNAL/Imagem/limeira.jpg" alt="Imagem de destaque da notícia" class="w-full h-auto rounded-xl mb-4 shadow-lg">
-                <h2 class="text-3xl md:text-4xl font-bold mb-2 text-blue-800 hover:text-blue-600 transition-colors">Limeira é premiada por uso inovador de geotecnologia</h2>
-                <p class="text-gray-600 leading-relaxed">Limeira foi reconhecida pelo uso estratégico da plataforma de geoprocessamento integrada ao sistema municipal de dados. A ferramenta é utilizada ...</p>
-            </a>
-        </div>
+    <!-- Notícia em Destaque (Coluna 1) -->
+    <div id="destaque" class="md:col-span-2 bg-white p-6 rounded-2xl shadow-xl border-t-4 border-blue-500">
+        <a href="noticia.html">
+        <img src="/JORNAL/Imagem/m_137_0_1_25062025173506.jpeg" alt="Imagem de destaque da notícia" class="w-full h-auto rounded-xl mb-4 shadow-lg">
+        <h2 class="text-3xl md:text-4xl font-bold mb-2 text-blue-800 hover:text-blue-600 transition-colors">Limeira é premiada por uso inovador de geotecnologia</h2>
+        <p class="text-gray-600 leading-relaxed">Limeira foi reconhecida pelo uso estratégico da plataforma de geoprocessamento integrada ao sistema municipal de dados. A ferramenta é utilizada ...</p>
+        </a>
+    </div>
 
         <!-- Outras Notícias (Coluna 2 e 3) -->
         <div class="md:col-span-1 grid gap-6">
 
-            <!-- Notícia 1 -->
-            <article class="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <a href="#">
+           <!-- Notícia 1 -->
+            <article id="saude" class="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow hover:bg-blue-100"></article>
+            <a href="#saude" class="block hover:text-blue-700">
                     <img src="/JORNAL/Imagem/Telefone-do-Samu-esta-fora-do-ar-ligacoes-devem-ser-encaminhadas-ao-193.png" alt="Imagem de uma notícia secundária" class="w-full h-auto rounded-lg mb-3">
                     <h3 class="text-xl font-bold mb-1 text-gray-800 hover:text-blue-700 transition-colors">Telefone do Samu está fora do ar; ligações devem ser encaminhadas ao 193</h3>
                     <p class="text-gray-500 text-sm">O Serviço de Atendimento Móvel de Urgência (Samu) de Limeira (SP) informa que o telefone 192 está indisponível. Em caso de emergência, a população deve ligar no 193 (Corpo de Bombeiro) ou no (19) 99956-7379 (Samu).</p>
                 </a>
-            </article>
+            </article> 
 
             <!-- Notícia 2 -->
-            <article class="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <a href="#">
+            <article id="clima" class="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <a href="#clima"></a>
                     <img src="/JORNAL/Imagem/geada.avif" alt="Imagem de outra notícia secundária" class="w-full h-auto rounded-lg mb-3">
                     <h3 class="text-xl font-bold mb-1 text-gray-800 hover:text-blue-700 transition-colors">Geada: Limeira registra 0ºC e Piracicaba tem mínimas abaixo de 2ºC; veja até quando vai o frio</h3>
                     <p class="text-gray-500 text-sm">Defesa Civil do Estado emitiu alerta para queda acentuada de temperatura válido de terça-feira (29) a sexta-feira (1°). Piracicaba (SP) pode registrar 5°C, segundo Inmet.</p>
@@ -70,8 +67,8 @@
     <!-- Rodapé -->
     <footer class="bg-gray-800 text-white text-center p-6 mt-8 rounded-t-xl mx-auto w-11/12 md:max-w-6xl">
         <div class="container mx-auto">
-            <p>&copy; 2025 Jornal da Bia. Todos os direitos reservados.</p>
-            <p class="text-sm mt-2">Contato: contato@jornaldaBia.com.br</p>
+            <p>&copy; 2025 Jornal da Beatriz. Todos os direitos reservados.</p>
+            <p class="text-sm mt-2">Contato: contato@jornaldaBeatriz.com.br</p>
         </div>
     </footer>
 
