@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igreja Santo Antonio - Formulários</title>
+    <style></style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Igreja Santo Antonio</h1>
+            <nav>
+                <ul>
+                    <li><a href="paginaweb.html">Início</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="quermesses.html">Quermesses</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="formularios.html">Formulários</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container main-content">
+        <section id="formularios" class="form-section">
+            <h2>Formulários de Contato e Inscrição</h2>
+            <p>Utilize os formulários abaixo para nos enviar sua mensagem ou se inscrever em nossas atividades.</p>
+
+            <form action="#" method="post">
+                <h3>Matrículas Abertas </h3>
+                <div class="form-group">
+                    <label for="nome_matricula">Seu Nome Completo:</label>
+                    <input type="text" id="nome_matricula" name="nome_matricula" required>
+                </div>
+                <div class="form-group">
+                    <label for="email_matricula">Seu E-mail:</label>
+                    <input type="email" id="email_matricula" name="email_matricula" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone_matricula">Telefone:</label>
+                    <input type="tel" id="telefone_matricula" name="telefone_matricula">
+                </div>
+                <div class="form-group">
+                    <label for="evento">Atividade/Evento de Interesse:</label>
+                    <select id="evento" name="evento" required>
+                        <option value="">-- Selecione uma opção --</option>
+                        <option value="catequese">Catequese</option>
+                        <option value="retiro_espiritual">Retiro Espiritual</option>
+                        <option value="curso_pre_matrimonial">Curso Pré-Matrimonial</option>
+                        <option value="grupo_jovens">Grupo de Jovens</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+                <button type="submit">Realizar Matrícula</button>
+            </form>
+        </section>
+
+            <form action="#" method="post">
+                <h3>Deixe seu Comentário ou Sugestão</h3>
+                <div class="form-group">
+                    <label for="nome_mensagem">Seu Nome:</label>
+                    <input type="text" id="nome_mensagem" name="nome_mensagem" required>
+                </div>
+                <div class="form-group">
+                    <label for="email_mensagem">Seu E-mail:</label>
+                    <input type="email" id="email_mensagem" name="email_mensagem" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Sua Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            
+            <hr style="margin: 30px 0;">
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Igreja Santo Antonio. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
