@@ -1,0 +1,121 @@
+/* Importando a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Estilos globais do corpo da página */
+body {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos do cabeçalho */
+.header-container {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #fff205, #00ffff);
+    color: #000;
+    width: 100%;
+}
+
+.header-container h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-container p {
+    font-size: 0.8em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos da galeria */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos dos cards individuais */
+.card {
+    background-color: #1a1a1a;
+    border: 2px solid #7cff01;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #7cff01, 0 0 60px #00ffff;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #00ffff;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 1.5em;
+    color: #ffde59;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card-content .year {
+    font-size: 0.7em;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.card-content .description {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/* Estilos para a seção de mídia */
+.media {
+    margin-top: 20px;
+}
+
+.media audio, .media iframe {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Estilos do rodapé */
+.footer-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #0d0d0d;
+    border-top: 2px solid #7cff01;
+    margin-top: 50px;
+    font-size: 0.8em;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .header-container h1 {
+        font-size: 1.8em;
+    }
+
+    .gallery-container {
+        padding: 20px;
+    }
+}
