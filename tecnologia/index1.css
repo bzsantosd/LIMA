@@ -1,0 +1,103 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5; /* Light grey background */
+}
+
+/* Header Styles */
+header {
+    background-color: #73B9EE; /* Indigo/dark purple */
+    color: white;
+    text-align: center;
+    /* Removido o padding bottom para evitar cor clara sobrando abaixo da nav, 
+       o padding vertical do cabeçalho agora só afeta o conteúdo de cima. */
+    padding: 20px 0 0; /* Ajuste: removi o padding bottom de 20px */
+}
+
+.header-content {
+    padding-bottom: 20px; /* Adicionado padding para o conteúdo de cima */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0; /* Removido o margin-top: 20px */
+    display: flex;
+    justify-content: center;
+    background-color: #5494DA; /* Slightly lighter purple for nav bar */
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Area */
+main {
+    display: flex; /* Or use margin for centering */
+    justify-content: center;
+    padding: 20px;
+}
+
+.project-history {
+    background-color: white;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+    padding: 20px;
+    width: 80%; /* Adjust as needed */
+    max-width: 900px; /* Max width to prevent it from getting too wide */
+    margin-top: -30px; /* Overlaps slightly with the header */
+}
+
+.project-history h2 {
+    color: #3373C4; /* Dark purple */
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.project-history h3 {
+    color: #1750AC; /* Dark purple */
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.project-history p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.final-message {
+    text-align: center;
+}
+
+.site-footer {
+    text-align: center;
+    /* 2. Alteração: Fundo igual ao da barra de navegação */
+    background-color: #5494DA;
+    color: white; /* Cor do texto para contraste */
+    padding: 10px 0;
+    margin-top: 20px; /* Adiciona um pequeno espaço do conteúdo acima */
+}
